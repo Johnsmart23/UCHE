@@ -1,0 +1,309 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#navbar {
+    width: 100%;
+    height: 100vh;
+    background: url(images/Rectangle\ 1.png);
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left-menu {
+    padding: 40px;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-left-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-left-menu img {
+    margin-left: 100px;
+    width: 30px;
+}
+
+.navbar-left-menu li a:hover {
+    color: #fff;
+}
+
+.navbar-center {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar-center li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-center li a:hover {
+    color: red;
+}
+
+.navbar-right .signup-button {
+    background-color: #8D0808;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 100px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.navbar-right .signup-button:hover {
+    background-color: red;
+    transform: scale(1.05);
+}
+
+b {
+    color: #8D0808;
+}
+
+
+nav ul {
+    position: fixed;
+    top: 0;
+    right: -250px; 
+    width: 250px;
+    height: 100%;
+    background-color: transparent; 
+    transition: right 0.3s ease; 
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    z-index: 1000;
+}
+nav ul li {
+    display: block; 
+    margin: 20px 0;
+    text-align: center;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block; 
+    padding: 10px 0; 
+    transition: background 0.3s;
+}
+.champ {
+    color: #fff;
+    padding: 100px;
+    font-size: 20px;
+}
+
+#manubtn {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 1001; 
+}
+#manubtn img {
+    width: 30px;
+    margin-top: 15px;
+}
+.signup-button {
+    background-color: #8D0808;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.signup-button:hover {
+    background-color: red;
+    transform: scale(1.05);
+}
+
+#About {
+    display: flex;
+}
+strong{
+    color: #000;
+}
+.fight img {
+    padding: 100px;
+    width: 400px;
+    height: 60vh;
+}
+
+.business {
+    padding: 100px;
+}
+
+.signup-button {
+    background-color: #8D0808;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.signup-button:hover {
+    background-color: red;
+    transform: scale(1.05);
+}
+
+#Contact {
+    background-color:#8D0808;
+    color: #fff;
+    display: flex;
+    padding: 20px;
+    gap: 550px;
+}
+
+.terms a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 20px;
+}
+.terms a:hover{
+    color: blue;
+}
+
+.next p{
+    padding: 10px;
+}
+.next{
+    margin-left: 70px;
+}
+
+.terms p{
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #navbar {
+        background-image: url(images/Rectangle\ 1.png);
+        width: 500px;
+        height: 400px;
+        
+    }
+
+    #manubtn {
+        display: block;
+    }
+    #manubtn img {
+        margin-left: -50px;
+        margin-top: -5px;
+    }
+
+    .navbar-center {
+        display: none;
+
+    }
+
+    .navbar-right {
+        display: none;
+    }
+    nav ul li:hover{
+        color: red;
+    }
+
+    .navbar-left-menu {
+        gap: 0;
+        margin-left: -100px;
+    }
+
+    .navbar-left-menu li a {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .navbar-left-menu.active {
+        display: flex;
+    }
+    .champ {
+        font-size: 15px;
+        margin-left: -35px;
+        word-spacing: 10px;
+    }
+
+    #About{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fight img{
+        border-radius: 100%;
+        width: 300px;
+        height: 40vh;
+    }
+
+    .business{
+        text-align: center;
+        padding: 55px;
+        
+    }
+    
+    .navbar-right.active {
+        display: block;
+        margin-top: 20px;
+    }
+
+    #Contact{
+        gap: 150px;
+    }
+    .next h1{
+        font-size: 20px;
+    }
+    .terms p{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+    .terms a{
+        padding: 10px;
+    }
+    .terms a:hover{
+        color: blue;
+    }
+    .next{
+        margin-left: 0;
+    }
+    .next p{
+        padding: 0;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+}
